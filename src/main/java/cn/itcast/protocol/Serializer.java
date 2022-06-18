@@ -1,5 +1,6 @@
 package cn.itcast.protocol;
 
+import com.alibaba.fastjson.JSONObject;
 import com.google.gson.*;
 
 import java.io.*;
@@ -56,6 +57,18 @@ public interface Serializer {
                 Gson gson = new GsonBuilder().registerTypeAdapter(Class.class, new Serializer.ClassCodec()).create();
                 String json = gson.toJson(object);
                 return json.getBytes(StandardCharsets.UTF_8);
+            }
+        },
+        fastJson{
+            @Override
+            public <T> T deserialize(Class<T> clazz, byte[] bytes) {
+                String json  =new String(bytes,StandardCharsets.UTF_8);
+                return JSONObject.parseObject(json, clazz);
+            }
+
+            @Override
+            public <T> byte[] serialize(T object) {
+                return JSONObject.toJSONString(object).getBytes(StandardCharsets.UTF_8);
             }
         }
     }
