@@ -6,3 +6,14 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/target/
+*.class
+*.jar
+*.log
+/logs/*
+/target/*
+.gitignore
+.classpath
+.settings*
+.project
+/.idea/*
