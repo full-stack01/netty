@@ -93,8 +93,6 @@ e
 5.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml,e\6\e639c26d08947d6df74d6d8ca98a796cafd0830f
 i
 9src/main/java/cn/itcast/protocol/SequenceIdGenerator.java,3\b\3bd3780b01e4aa77d1487d7b85fd00ea06ac7b66
-a
-1src/test/java/cn/sp/netty/c7/HellWorldClient.java,3\f\3f7283bb7df22a2adf188bb71bc69f3850d53ec5
 f
 6.idea/libraries/Maven__com_alibaba_fastjson_1_2_74.xml,9\9\997e129956ea1fbdff21f785f603a41bf701f7e3
 j
